@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="lblWelcomeMessage">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>351</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Welcome to Company ABC&lt;br/&gt;personnel management &lt;br/&gt;application&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>331</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; font-style:italic; color:#7a0000;&quot;&gt;Company ABC&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <widget class="QMenu" name="menuAdd_New">
+     <property name="title">
+      <string>Add New</string>
+     </property>
+     <addaction name="actionMonthly_paid_employee"/>
+     <addaction name="separator"/>
+     <addaction name="actionHourly_paid_employee"/>
+     <addaction name="separator"/>
+     <addaction name="actionSalesman"/>
+     <addaction name="separator"/>
+    </widget>
+    <widget class="QMenu" name="menuView_Existing">
+     <property name="title">
+      <string>View Existing</string>
+     </property>
+     <addaction name="actionHourly_Employee_List"/>
+     <addaction name="separator"/>
+     <addaction name="actionHourly_Paid_Employee_List"/>
+     <addaction name="separator"/>
+     <addaction name="actionSalesman_List"/>
+     <addaction name="separator"/>
+    </widget>
+    <addaction name="menuAdd_New"/>
+    <addaction name="menuView_Existing"/>
+    <addaction name="separator"/>
+    <addaction name="actionE_xit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionMonthly_paid_employee">
+   <property name="text">
+    <string>Monthly Paid Employee</string>
+   </property>
+  </action>
+  <action name="actionHourly_paid_employee">
+   <property name="text">
+    <string>Hourly Paid Employee</string>
+   </property>
+  </action>
+  <action name="actionSalesman">
+   <property name="text">
+    <string>Salesman</string>
+   </property>
+  </action>
+  <action name="actionHourly_Employee_List">
+   <property name="text">
+    <string>Montly Paid Employee List</string>
+   </property>
+  </action>
+  <action name="actionHourly_Paid_Employee_List">
+   <property name="text">
+    <string>Hourly Paid Employee List</string>
+   </property>
+  </action>
+  <action name="actionSalesman_List">
+   <property name="text">
+    <string>Salesman List</string>
+   </property>
+  </action>
+  <action name="actionE_xit">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
